@@ -1,0 +1,197 @@
+@font-face {
+    font-family: StGeorge;
+    src: url(fonts/stgeorge.ttf);
+}
+
+@font-face {
+    font-family: Chau;
+    src: url(fonts/chau.ttf);
+}
+
+@font-face {
+    font-family: 'Robot-Dreamer';
+    src:url('Robot-Dreamer.ttf.woff') format('woff'),
+        url('Robot-Dreamer.ttf.svg#Robot-Dreamer') format('svg'),
+        url('Robot-Dreamer.ttf.eot'),
+        url('Robot-Dreamer.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title {
+    margin-bottom: 5px; 
+    font-size: 3em;
+    font-family: Robot-Dreamer;
+    text-align: center;
+    color: #FF66C4;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FF66C4;
+    text-shadow: 0 0 15px #FF66C4;
+}
+
+.subtitle2 {
+    margin-bottom: 5px; 
+    font-size: 2em;
+    font-family: Robot-Dreamer;
+    text-align: center;
+    color: #FF66C4;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FF66C4;
+    text-shadow: 0 0 15px #FF66C4;
+}
+
+.subtitle {
+    margin-top: 0;
+    font-size: 1.5em;
+    font-family: Chau, 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #ffffff;
+    background-clip: text;
+}
+
+.newstitle {
+    margin-top: 0;
+    font-size: 1em;
+    font-family: Chau, 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #ffffff;
+    background-clip: text;
+}
+
+.bodytext {
+    font-size: 1.2em;
+    font-family: Chau, 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #ffffff;
+    background-clip: text;
+}
+
+.copyright {
+    font-size: 0.9em;
+    font-family: Chau, 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #7b7b7b;
+    background-clip: text;
+}
+
+.topnav {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff;
+  box-shadow: 0 0 15px #ffffff;
+  border-radius: 25px;
+  overflow: hidden;
+  font-family: Chau;
+}
+
+.archive {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff;
+  box-shadow: 0 0 15px #ffffff;
+  border-radius: 25px;
+  overflow: hidden;
+  font-family: Chau;
+  display: flex;
+  align-items: center;       /* vertical centering */
+  justify-content: space-between; /* pushes content left + right */
+}
+
+.archive p {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.archive a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  color: #f2f2f2;
+  background-color: lime;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff;
+  border-radius: 25px;
+}
+
+.archive a:hover {
+  box-shadow: 0 0 15px #ffffff;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #FF66C4;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* use viewport height */
+
+  background-image: url("backgroundimage/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  z-index: -1;
+}
+
+.pdf {
+  width: 50%;
+  aspect-ratio: 9 / 12; /* Maintains 16:9 ratio */
+  height: auto; /* Ensures height scales with width */
+}
+
+.mySlides {
+  width: 50%; /* Reduces width to 300px */
+  height: auto;  /* Maintains aspect ratio */
+  max-width: 100%
+}
+
+body {
+  background-color: #FF66C4;
+}

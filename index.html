@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="studios.png">
+    <meta charset="UTF-8">
+    <title>ARSG Studios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">ARSG</a>
+  <a href="newsarchive/">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<body>
+    <div class="bg-image"></div>
+    <h1 class="title">ARSG Studios</h1>
+    <p class="subtitle">Est. 2024</p>
+    <br>
+    <p class="bodytext">Hi! Welcome to the ARSG Studios website! To learn more about this website or to seek contact information. Please use the navigation bar that is directly above this text!</p>
+    <br>
+    <center>
+    <div>
+    <img class="mySlides" src="slideshowimages/s1.png">
+    <img class="mySlides" src="slideshowimages/s2.png">
+    <img class="mySlides" src="slideshowimages/s3.png">
+    <img class="mySlides" src="slideshowimages/s4.png">
+    <img class="mySlides" src="slideshowimages/s5.png">
+    <img class="mySlides" src="slideshowimages/s6.png">
+    </div>
+    </center>
+    <br>
+    <p class="subtitle2">Recent News</p>
+    <br>
+    <p class="newstitle">LAWLESS IS DEAD!</p>
+    <center>
+    <iframe class="pdf" src="news/document.pdf" width="50%" height="600px"></iframe>
+    </center>
+</body>
+<br>
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+
+<footer class="copyright">© ARSG STUDIOS 2026. All rights reserved.</footer>
+
+
